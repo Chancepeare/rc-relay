@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: rc-relay
+    runtime: node
+    plan: free
+    rootDir: .
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /
+    envVars:
+      - key: UDP_ENABLED
+        value: "0"

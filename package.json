@@ -1,0 +1,14 @@
+{
+  "name": "rc-relay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "远程协助中继服务器：按房间号配对两台设备并中继信令与视频数据",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
